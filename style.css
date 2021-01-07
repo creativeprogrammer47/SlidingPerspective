@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #121212;
+  overflow: hidden;
+  margin-top: 200px;
+}
+.text {
+  color: #000000;
+  font-family: Arial;
+  font-size: 58px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+.line {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+p {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  transition: all 0.5s ease-in-out;
+}
+.line:nth-child(odd) {
+  transform: skew(60deg, -30deg) scaleY(0.667);
+}
+.line:nth-child(even) {
+  transform: skew(0deg, -30deg) scaleY(1.337);
+}
+.text:hover p {
+  transform: translate(0, -50px);
+}
+.line:nth-child(1) {
+  left: 29px;
+}
+.line:nth-child(2) {
+  left: 58px;
+  background: #ff553e;
+}
+.line:nth-child(3) {
+  left: 87px;
+  background: #00ffff;
+}
+.line:nth-child(4) {
+  left: 116px;
+  background: #3eccc7;
+}
+.line:nth-child(5) {
+  left: 145px;
+}
